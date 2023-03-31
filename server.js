@@ -9,11 +9,6 @@ app.get('/node_modules/bootstrap/dist/css/bootstrap.min.css', (req, res) => {
   res.sendFile(path.join(__dirname, 'node_modules', 'bootstrap','dist','css','bootstrap.min.css'))
 })
 
-app.get('/node_modules/jquery/dist/jquery.min.js', (req, res) => {
-  res.sendFile(path.join(__dirname, 'node_modules', 'jquery', 'dist', 'jquery.min.js'))
-})
-
-
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'views/index.html'))
 })
